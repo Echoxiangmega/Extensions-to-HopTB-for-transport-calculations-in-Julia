@@ -1,3 +1,20 @@
+# ============================================================
+# x=S (spin) or L (orbital)
+# Purpose: Calculate nonlinear electric-field-induced spin 
+#          (and orbital) angular momentum generation.
+# Dependencies: HopTB.jl, LinearAlgebra, etc.
+# Author: Your Name
+# Date: 2025-09-04
+#
+# References:
+# - Phys. Rev. Lett. 129, 086602 (2022)
+# - npj Spintronics 2, 33 (2024)
+#   (Formulas for nonlinear spin and orbital angular momentum generation)
+#  Limit: only z-direction orbital angular momentum 
+# ============================================================
+
+
+
 __precompile__()
 module AMO
 
@@ -375,7 +392,7 @@ end
 
 
 
-
+#orbital-related fermi sea term
 function getintsea(tm::AbstractTBModel, a::Int64, b::Int64,db::Int64,ub::Int64,nkmesh::Vector{Int64};
     Ts::Vector{Float64}=[0.0], μs::Vector{Float64}=[0.0],offset::Vector=[0.0,0.0,0.0],
     k1::Vector{Float64}=[0.0, 0.0, 0.0], k2::Vector{Float64}=[1.0, 1.0, 1.0])
@@ -396,6 +413,7 @@ function getintsea(tm::AbstractTBModel, a::Int64, b::Int64,db::Int64,ub::Int64,n
     return σs*bzvol/nkpts/(2π)^3 # e**2/(hbar*(2π)^3)*1.0e10/100
 end
 
+#orbital-related fermi surface term
 function getintsurface(tm::AbstractTBModel, a::Int64, b::Int64,db::Int64,ub::Int64,nkmesh::Vector{Int64};
     Ts::Vector{Float64}=[0.0], μs::Vector{Float64}=[0.0],offset::Vector=[0.0,0.0,0.0],
     k1::Vector{Float64}=[0.0, 0.0, 0.0], k2::Vector{Float64}=[1.0, 1.0, 1.0])
