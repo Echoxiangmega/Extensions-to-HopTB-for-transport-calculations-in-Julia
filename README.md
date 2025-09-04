@@ -28,7 +28,7 @@ You can compute the intrinsic nonlinear electric-field-induced spin polarization
 
 ```julia
 HopTB.NEXG.getints(tb_model_from_wannier, alpha, beta, c, 1, ub, kmesh; Ts=[0.00086173], μs=ωs)
-
+```
 
 In this command:
 - `alpha, beta, c` are tensor component indices, each taking values in {1, 2, 3}.
