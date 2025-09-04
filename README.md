@@ -14,7 +14,7 @@ To use this module, copy `src/nexg.jl` into the `src/` folder of your local HopT
 #submodules
 include("nexg.jl")
 
-## References
+### References
 
 The formulas implemented in `nexg.jl` are based on the following works:
 
