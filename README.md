@@ -11,8 +11,10 @@ This extension allows you to evaluate how electric fields can drive angular mome
 ### Usage
 To use this module, copy `src/nexg.jl` into the `src/` folder of your local HopTB installation and include it in the HopTB.jl:
 
+```julia
 #submodules
 include("nexg.jl")
+```
 
 ### References
 
