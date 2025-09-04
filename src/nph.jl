@@ -1,3 +1,16 @@
+# ============================================================
+# Purpose: Calculate intrinsic nonlinear planar hall effect (spin and orbital part) 
+# 
+# Dependencies: HopTB.jl, LinearAlgebra, etc.
+# Author: Echo
+# Date: 2025-09-04
+#
+# References:
+# - PhysRevLett.130.126303
+#
+#   
+# ============================================================
+
 __precompile__()
 module NPH
 
