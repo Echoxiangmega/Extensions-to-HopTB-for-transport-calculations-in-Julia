@@ -52,7 +52,7 @@ include("nph.jl")
 
 ### Usage Example
 
-You can compute the intrinsic nonlinear planar Hall response using:
+You can compute the intrinsic nonlinear planar Hall response (orbital part) using:
 
 ```julia
 HopTB.NPH.getnph_o_fen2(tb_model_from_wannier, alpha, beta, gamma, d, db, ub, kmesh; μs=ωs)
