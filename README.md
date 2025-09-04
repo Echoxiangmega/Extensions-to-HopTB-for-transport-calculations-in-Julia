@@ -49,6 +49,7 @@ To use this module, copy `src/nph.jl` into the `src/` folder of your local HopTB
 ```julia
 #submodules
 include("nph.jl")
+```
 
 ### Usage Example
 
