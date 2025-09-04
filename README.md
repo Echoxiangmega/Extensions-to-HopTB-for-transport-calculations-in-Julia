@@ -18,5 +18,5 @@ include("nexg.jl")
 
 The formulas implemented in `nexg.jl` are based on the following works:
 
-- [Phys. Rev. Lett. **129**, 086602 (2022)](https://doi.org/10.1103/PhysRevLett.129.086602)  
+- [Phys. Rev. Lett. **129**, 086602 (2022)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.086602)  
 - [*npj Spintronics* **2**, 33 (2024)](https://www.nature.com/articles/s44306-024-00041-4)
