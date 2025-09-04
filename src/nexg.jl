@@ -1,6 +1,6 @@
 # ============================================================
 # x=S (spin) or L (orbital)
-# Purpose: Calculate nonlinear electric-field-induced spin 
+# Purpose: Calculate intrinsic nonlinear electric-field-induced spin 
 #          (and orbital) angular momentum generation.
 # Dependencies: HopTB.jl, LinearAlgebra, etc.
 # Author: Your Name
