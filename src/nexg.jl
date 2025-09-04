@@ -3,7 +3,7 @@
 # Purpose: Calculate intrinsic nonlinear electric-field-induced spin 
 #          (and orbital) angular momentum generation.
 # Dependencies: HopTB.jl, LinearAlgebra, etc.
-# Author: Your Name
+# Author: Echo
 # Date: 2025-09-04
 #
 # References:
@@ -16,7 +16,7 @@
 
 
 __precompile__()
-module AMO
+module NEXG
 
 using LinearAlgebra, Distributed
 using ..HopTB
