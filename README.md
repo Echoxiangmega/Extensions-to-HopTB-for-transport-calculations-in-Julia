@@ -39,3 +39,19 @@ In this command:
 - `μs` is an array of Fermi energy values.
 - `Ts` is the temperature array, here given in energy units (eV, with 0.00086173 ≈ 10 K).
 
+## New Module 2: `src/nph.jl`
+
+The file [`src/nph.jl`](src/nph.jl) implements routines to compute the **intrinsic nonlinear planar Hall effect (NPH)**.
+
+### Usage Example
+
+You can compute the intrinsic nonlinear planar Hall response using:
+
+```julia
+HopTB.NPH.getnph_o_fen2(tb_model_from_wannier, alpha, beta, gamma, d, db, ub, kmesh; μs=ωs)
+```
+In this command:
+- `alpha, beta, gamma, d` are tensor component indices, each taking values in {1, 2, 3}.
+- `db, ub` indicate the band index range used in the calculation.
+- `kmesh` sets the density of the k-point mesh.
+- `μs` is an array of Fermi energy values.
