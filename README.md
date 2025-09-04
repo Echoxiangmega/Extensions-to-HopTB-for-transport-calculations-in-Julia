@@ -43,6 +43,13 @@ In this command:
 
 The file [`src/nph.jl`](src/nph.jl) implements routines to compute the **intrinsic nonlinear planar Hall effect (NPH)**.
 
+### Usage
+To use this module, copy `src/nph.jl` into the `src/` folder of your local HopTB installation and include it in the HopTB.jl:
+
+```julia
+#submodules
+include("nph.jl")
+
 ### Usage Example
 
 You can compute the intrinsic nonlinear planar Hall response using:
@@ -55,3 +62,10 @@ In this command:
 - `db, ub` indicate the band index range used in the calculation.
 - `kmesh` sets the density of the k-point mesh.
 - `μs` is an array of Fermi energy values.
+
+### References
+
+The formulas implemented in `nph.jl` are based on the following works:
+
+- [PhysRevLett.130.126303](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.126303)  
+
