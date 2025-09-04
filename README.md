@@ -2,7 +2,7 @@
 
 This repository contains Julia extensions to [HopTB](https://github.com/HopTB/HopTB.jl) for transport and response calculations.
 
-## New Module: `src/nexg.jl`
+## New Module 1: `src/nexg.jl`
 
 The file [`src/nexg.jl`](src/nexg.jl) implements routines to compute the **intrinsic contribution** of **spin or orbital angular momentum polarization** induced by a nonlinear electric field.  
 
