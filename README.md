@@ -1,6 +1,7 @@
 # Extensions-to-HopTB-for-transport-calculations-in-Julia
 
 This repository contains Julia extensions to [HopTB](https://github.com/HopTB/HopTB.jl) for transport and response calculations.
+Here I didnot consider problems about degenerate bands.
 
 ## New Module 1: `src/nexg.jl`
 
